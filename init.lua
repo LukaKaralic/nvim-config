@@ -966,6 +966,7 @@ require('lazy').setup({
 vim.api.nvim_create_autocmd('VimEnter', {
   callback = function()
     vim.api.nvim_set_keymap('n', '<leader>tt', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>ff', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
   end,
 })
 
